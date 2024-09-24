@@ -4,7 +4,7 @@ public class TwoSum1 {
     public static void main(String[] args) {
         int arr[] = new int[]{2,7,11,15};
         int target = 9;
-        int arr2[] = twoSum(arr, 9);
+        int arr2[] = twoSum(arr, target);
         System.out.println(Arrays.toString(arr2));
     }
     public static int[] twoSum(int[] nums, int target) {
