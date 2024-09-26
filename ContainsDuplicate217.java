@@ -5,7 +5,7 @@ public class ContainsDuplicate217 {
     public static void main(String[] args) {
         int arr[] = new int[]{1,1,1,3,3,4,3,2,4,2};
         System.out.println(containsDuplicate(arr));
-        //System.out.println(containsDuplicate2(arr));
+        System.out.println(containsDuplicate2(arr));
     }
     public static boolean containsDuplicate(int[] nums) {
         boolean result = false;
@@ -14,5 +14,12 @@ public class ContainsDuplicate217 {
         }
         return result;
     }
-
+    public static boolean containsDuplicate2(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int n : nums){
+            if (set.contains(n)) return true;
+            set.add(n);
+        }
+        return false;
+    }
 }
