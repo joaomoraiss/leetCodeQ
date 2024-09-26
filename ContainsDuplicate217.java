@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class ContainsDuplicate217 {
     public static void main(String[] args) {
@@ -21,5 +23,16 @@ public class ContainsDuplicate217 {
             set.add(n);
         }
         return false;
+    }
+    public static boolean containsDuplicate3(int[] nums) {
+        Set<Integer> uniqueNums = Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.toSet());
+        return uniqueNums.size() < nums.length;
+    }
+    public static boolean containsDuplicate4(int[] nums) {
+        Set<Integer> seen = new HashSet<>();
+        return Arrays.stream(nums)
+                .anyMatch(num -> !seen.add(num));
     }
 }
