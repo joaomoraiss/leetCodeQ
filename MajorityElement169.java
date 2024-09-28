@@ -32,4 +32,9 @@ public class MajorityElement169 {
         }
         return canditado;
     }
+    public static int majorityElement3(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        return nums[n/2];
+    }
 }
