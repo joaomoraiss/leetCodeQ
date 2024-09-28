@@ -21,4 +21,15 @@ public class MajorityElement169 {
         }
         return elementoMaior;
     }
+    public static int majorityElement2(int[] nums) {
+        int qntdVezes = 0;
+        int canditado = 0;
+
+        for (int num : nums){
+            if (qntdVezes == 0 )canditado = num;
+            if (num == canditado) qntdVezes++;
+            else qntdVezes --;
+        }
+        return canditado;
+    }
 }
