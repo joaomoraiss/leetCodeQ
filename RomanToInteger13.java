@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RomanToInteger13 {
     public static void main(String[] args) {
-        System.out.println(romanToInt("MCMXCIV"));
+        System.out.println(romanToInt("MCMXCIVI"));
     }
     public static int romanToInt(String s){
         HashMap<Character, Integer> romanValues = new HashMap<>();
