@@ -1,6 +1,6 @@
 public class BinarySearch {
     public static void main(String[] args) {
-        int arr[] = new int[]{1,2,3,4,5,6,7};
+        int arr[] = new int[]{1,2,3,4,5,6,7,9};
         System.out.println(binarySearch(7, arr));
     }
     public static int binarySearch(int target, int arr[]){
