@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class ContainsDuplicate217 {
     public static void main(String[] args) {
-        int arr[] = new int[]{1,1,1,3,3,4,3,2,4,2,4};
+        int arr[] = new int[]{1,1,1,3,3,4,3,2,4,2,4,4};
         System.out.println(containsDuplicate(arr));
         System.out.println(containsDuplicate2(arr));
     }
