@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class TwoSum1 {
     public static void main(String[] args) {
-        int arr[] = new int[]{2, 7, 11, 15};
+        int arr[] = new int[]{2, 7, 11, 15,18};
         int target = 9;
         int arr2[] = twoSum(arr, target);
         System.out.println(Arrays.toString(arr2));
