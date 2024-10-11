@@ -1,6 +1,6 @@
 public class BestTimeBuySellStock121 {
     public static void main(String[] args) {
-        int[]arr = new int[]{7,6,4,3,1};
+        int[]arr = new int[]{7,6,4,3,1,4};
         System.out.println(maxProfit(arr));
     }
     public static int maxProfit(int[] prices) {
