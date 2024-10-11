@@ -4,13 +4,12 @@ public class BestTimeBuySellStock121 {
         System.out.println(maxProfit(arr));
     }
     public static int maxProfit(int[] prices) {
-        int buy = prices.length -1;
-        int sell = 0;
-        for (int i = 0; i < prices.length -1; i++){
-            if (prices[i] < prices[buy]) buy = i;
-            if (prices[i] > sell && i > buy) sell = i;
-            else prices[0] = prices[buy];
+        int buy = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int i = 0; i < prices.length; i ++){
+            if (prices[i] < buy) buy = prices[i];
+            else if(prices[i] - buy > maxProfit) maxProfit = prices[i] - buy;
         }
-        return prices[sell] - prices[buy];
+        return maxProfit;
     }
 }
