@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RemoveDuplicatesSortedArray26 {
     public static void main(String[] args) {
 
@@ -13,5 +15,10 @@ public class RemoveDuplicatesSortedArray26 {
             }
         }
         return k;
+    }
+    public static int removeDuplicates2(int[] nums) {
+        int[] uniqueNums = Arrays.stream(nums).distinct().toArray();
+        for (int i = 0; i < uniqueNums.length; i++) nums[i] = uniqueNums[i];
+        return uniqueNums.length;
     }
 }
