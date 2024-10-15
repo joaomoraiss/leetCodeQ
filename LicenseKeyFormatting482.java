@@ -1,7 +1,7 @@
 public class LicenseKeyFormatting482 {
     public static void main(String[] args) {
         int k = 4;
-        String s = "5F3Z-2el-9-ww";
+        String s = "5F3Z-2el-9-w";
         System.out.println(licenseKeyFormatting(s, 4));
     }
     public static String licenseKeyFormatting(String s, int k) {
