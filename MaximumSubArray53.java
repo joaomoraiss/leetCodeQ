@@ -3,7 +3,7 @@ import java.util.List;
 
 public class MaximumSubArray53 {
     public static void main(String[] args) {
-        int nums[] = new int[]{-2,1,-3,4,-1,2,1,-5,4,3};
+        int nums[] = new int[]{-2,1,-3,4,-1,2,1,-5,4,3,5};
         System.out.println(maxSubArray(nums));
     }
 
