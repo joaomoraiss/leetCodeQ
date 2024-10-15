@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 public class MajorityElement169 {
     public static void main(String[] args) {
-        int[] nums = new int[]{2,2,1,1,1,1,2,2,5};
+        int[] nums = new int[]{2,2,1,1,1,1,2,2};
         System.out.println(majorityElement(nums));
         System.out.println(majorityElement2(nums));
         System.out.println(majorityElement3(nums));
